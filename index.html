@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chative</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app-container">
+        <header id="chat-header">
+            <div class="logo">Chative</div>
+            <div class="status-indicator online"></div>
+        </header>
+
+        <main id="chat-window">
+            <div class="message-list" id="message-list">
+                <div class="message ai">
+                    <div class="bubble">Hello! How can I help you today?</div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="chat-input-area">
+            <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+            <button id="send-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </footer>
+    </div>
+
+    <div id="start-screen">
+        <button id="start-demo-btn">Start Demo</button>
+    </div>
+
+    <button id="fix-btn" class="hidden">Fix</button>
+
+    <div id="fixing-overlay" class="hidden">
+        <div class="fixing-content">
+            <div class="spinner"></div>
+            <h2>System Failure Detected</h2>
+            <p>Attempting auto-recovery...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
